@@ -1,0 +1,32 @@
+body{
+  background: #181825;
+  color: white;
+}
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-row input[type="text"] {
+  flex: 1;
+}
+
+button[type="submit"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[type="submit"] img {
+  width: 32px;
+  height: 32px;
+}
+figure > img{
+  width: 50px;
+
+}
