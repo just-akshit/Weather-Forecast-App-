@@ -56,9 +56,10 @@ search.addEventListener("click", () => {
           image.src = "_assets/_icons/cloudy.png";
           break;
         case "Mist":
+          image.src = "_assets/_icons/nightCloudy.png"
         case "Smoke":
         case "Haze":
-          image.src = "_assets/_icons/cloudy.png";
+          image.src = "_assets/_icons/night_rain.png";
           break;
         case "Dust":
         case "Sand":
@@ -88,4 +89,10 @@ search.addEventListener("click", () => {
       weatherDetails.classList.add("fadeIn");
       container.style.height = "590px";
     });
+});
+
+document.querySelector(".search-box input").addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    search.click();
+  }
 });
